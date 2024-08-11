@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import { NextUIProvider } from "@nextui-org/react";
 
 const inter = Nunito({ subsets: ["latin"] });
 
@@ -20,10 +21,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
-				<Navbar />
-				{children}
-			</body>
+			<NextUIProvider>
+				<body className={inter.className}>
+					<Navbar />
+					{children}
+				</body>
+			</NextUIProvider>
 		</html>
 	);
 }
