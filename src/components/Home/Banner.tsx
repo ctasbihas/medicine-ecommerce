@@ -5,7 +5,7 @@ const Banner = () => {
 	return (
 		<section className="bg-[#304D30] text-white">
 			<div className="flex justify-between max-w-7xl mx-auto h-[75vh]">
-				<div className="flex flex-col items-start justify-center p-5 w-2/4">
+				<div className="flex flex-col items-start justify-center py-5 w-2/4">
 					<h1 className="text-4xl md:text-6xl font-bold mb-4">
 						Your Prescription for Affordable Health Solutions!
 					</h1>
