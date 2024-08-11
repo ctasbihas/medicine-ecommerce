@@ -1,7 +1,9 @@
+import Banner from "@/components/Home/Banner";
+
 const Home = () => {
 	return (
-		<div className="h-screen bg-gray-600">
-			<h1>Hello World</h1>
+		<div className="">
+			<Banner />
 		</div>
 	);
 };
