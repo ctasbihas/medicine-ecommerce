@@ -21,12 +21,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<NextUIProvider>
-				<body className={inter.className}>
+			<body className={inter.className}>
+				<NextUIProvider>
 					<Navbar />
 					{children}
-				</body>
-			</NextUIProvider>
+				</NextUIProvider>
+			</body>
 		</html>
 	);
 }
