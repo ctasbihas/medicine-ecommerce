@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Navbar: React.FC = () => {
 	return (
-		<nav className="bg-white shadow-md sticky top-0 w-full z-50">
+		<nav className="bg-white shadow-md border-b border-gray-300 sticky top-0 w-full z-50">
 			<div className="py-4 flex justify-between items-center max-w-7xl mx-auto">
 				{/* Logo Section */}
 				<Image
@@ -37,10 +37,10 @@ const Navbar: React.FC = () => {
 						<span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
 					</Link>
 					<Link
-						href="/login"
+						href="/register"
 						className="relative text-gray-800 font-bold transition-colors duration-200 ease-in-out group"
 					>
-						Login
+						Register
 						<span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-800 transition-all duration-500 group-hover:w-full"></span>
 					</Link>
 				</div>
