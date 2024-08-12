@@ -5,7 +5,15 @@ import React from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
-const Input = ({ label, type }: { label: string; type: string }) => {
+const Input = ({
+	label,
+	type,
+	autoFocus,
+}: {
+	label: string;
+	type: string;
+	autoFocus?: boolean;
+}) => {
 	const [isVisible, setIsVisible] = React.useState(false);
 
 	const toggleVisibility = () => setIsVisible(!isVisible);
@@ -14,7 +22,7 @@ const Input = ({ label, type }: { label: string; type: string }) => {
 		<NextInput
 			label={label}
 			variant="underlined"
-			autoFocus={label === "Full Name"}
+			autoFocus={autoFocus}
 			style={{ borderColor: "red" }}
 			endContent={
 				type === "password" ? (
