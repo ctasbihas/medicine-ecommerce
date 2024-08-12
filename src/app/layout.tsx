@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Nunito({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
 				<NextUIProvider>
 					<Navbar />
 					{children}
+					<Footer />
 				</NextUIProvider>
 			</body>
 		</html>
