@@ -8,7 +8,13 @@ const SearchBar = ({ onSearch }: any) => {
 	const router = useRouter();
 
 	useEffect(() => {
-		setQuery(window.location.href.split("=")[1].split("%20").join(" "));
+		const searchParam = new URLSearchParams(window.location.search).get(
+			"search"
+		);
+		if (searchParam) {
+			const decodedQuery = decodeURIComponent(searchParam);
+			setQuery(decodedQuery);
+		}
 	}, []);
 
 	const handleSearch = (e: any) => {
@@ -31,6 +37,37 @@ const SearchBar = ({ onSearch }: any) => {
 					onChange={(e) => setQuery(e.target.value)}
 					size="sm"
 					className="rounded-l-lg border-r-0"
+					endContent={
+						<div className="flex items-center">
+							<label
+								className="sr-only"
+								htmlFor="currency"
+							>
+								Currency
+							</label>
+							<select
+								className="outline-none border-0 bg-transparent text-default-400 text-small"
+								id="currency"
+								name="currency"
+							>
+								<option
+									value="all"
+									defaultChecked
+								>
+									All
+								</option>
+								<option value="pain relief">Pain Relief</option>
+								<option value="vitamins">
+									Vitamins & Supplements
+								</option>
+								<option value="cold">Cold & Flu</option>
+								<option value="digestive health">
+									Digestive Health
+								</option>
+								<option value="skin care">Skin Care</option>
+							</select>
+						</div>
+					}
 				/>
 				<Button
 					variant="solid"
