@@ -1,5 +1,5 @@
 "use client";
-import { Button, Input } from "@nextui-org/react";
+import { Button, Input, Tab, Tabs } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -23,7 +23,7 @@ const SearchBar = ({ onSearch }: any) => {
 	};
 
 	return (
-		<div className="flex justify-center my-8">
+		<div className="flex justify-between max-w-7xl mx-auto my-8">
 			<form
 				onSubmit={handleSearch}
 				className="flex items-center w-full max-w-lg"
@@ -37,37 +37,6 @@ const SearchBar = ({ onSearch }: any) => {
 					onChange={(e) => setQuery(e.target.value)}
 					size="sm"
 					className="rounded-l-lg border-r-0"
-					endContent={
-						<div className="flex items-center">
-							<label
-								className="sr-only"
-								htmlFor="currency"
-							>
-								Currency
-							</label>
-							<select
-								className="outline-none border-0 bg-transparent text-default-400 text-small"
-								id="currency"
-								name="currency"
-							>
-								<option
-									value="all"
-									defaultChecked
-								>
-									All
-								</option>
-								<option value="pain relief">Pain Relief</option>
-								<option value="vitamins">
-									Vitamins & Supplements
-								</option>
-								<option value="cold">Cold & Flu</option>
-								<option value="digestive health">
-									Digestive Health
-								</option>
-								<option value="skin care">Skin Care</option>
-							</select>
-						</div>
-					}
 				/>
 				<Button
 					variant="solid"
@@ -79,6 +48,38 @@ const SearchBar = ({ onSearch }: any) => {
 					Search
 				</Button>
 			</form>
+			<div className="flex flex-wrap gap-4">
+				<Tabs
+					color="primary"
+					variant="bordered"
+					radius="full"
+				>
+					<Tab
+						key="pain-relief"
+						title="Pain Relief"
+					/>
+					<Tab
+						key="supplements"
+						title="Supplements"
+					/>
+					<Tab
+						key="cold-flu"
+						title="Cold & Flu"
+					/>
+					<Tab
+						key="allergy-relief"
+						title="Allergy Relief"
+					/>
+					<Tab
+						key="digestive-health"
+						title="Digestive Health"
+					/>
+					<Tab
+						key="skincare"
+						title="Skincare"
+					/>
+				</Tabs>
+			</div>
 		</div>
 	);
 };

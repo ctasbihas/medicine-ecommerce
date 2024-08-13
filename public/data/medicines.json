@@ -1,0 +1,222 @@
+[
+	{
+		"id": 1,
+		"name": "Tylenol Extra Strength",
+		"image": "/images/tylenol.jpg",
+		"price": "$14.99",
+		"category": "Pain Relief",
+		"brand": "Tylenol",
+		"description": "Tylenol Extra Strength for effective pain relief of headaches, muscle pain, and more.",
+		"rating": 4.8,
+		"stock": 100
+	},
+	{
+		"id": 2,
+		"name": "Advil Pain Reliever",
+		"image": "/images/advil.jpg",
+		"price": "$12.49",
+		"category": "Pain Relief",
+		"brand": "Advil",
+		"description": "Advil Pain Reliever for quick relief from headaches, arthritis, and other aches and pains.",
+		"rating": 4.7,
+		"stock": 200
+	},
+	{
+		"id": 3,
+		"name": "Bayer Aspirin",
+		"image": "/images/aspirin.jpg",
+		"price": "$9.99",
+		"category": "Pain Relief",
+		"brand": "Bayer",
+		"description": "Bayer Aspirin for reducing fever, pain, and inflammation.",
+		"rating": 4.5,
+		"stock": 150
+	},
+	{
+		"id": 4,
+		"name": "Nature Made Vitamin D3",
+		"image": "/images/vitamin-d3.jpg",
+		"price": "$11.99",
+		"category": "Supplements",
+		"brand": "Nature Made",
+		"description": "Nature Made Vitamin D3 for bone, teeth, and immune health.",
+		"rating": 4.9,
+		"stock": 80
+	},
+	{
+		"id": 5,
+		"name": "One A Day Multivitamin",
+		"image": "/images/one-a-day.jpg",
+		"price": "$15.49",
+		"category": "Supplements",
+		"brand": "One A Day",
+		"description": "One A Day Multivitamin for complete daily nutrition support.",
+		"rating": 4.6,
+		"stock": 120
+	},
+	{
+		"id": 6,
+		"name": "Emergen-C Vitamin C",
+		"image": "/images/emergen-c.jpg",
+		"price": "$10.99",
+		"category": "Supplements",
+		"brand": "Emergen-C",
+		"description": "Emergen-C Vitamin C supplement to support immune health with antioxidants.",
+		"rating": 4.8,
+		"stock": 100
+	},
+	{
+		"id": 7,
+		"name": "Vicks DayQuil Cold & Flu",
+		"image": "/images/dayquil.jpg",
+		"price": "$8.99",
+		"category": "Cold & Flu",
+		"brand": "Vicks",
+		"description": "Vicks DayQuil Cold & Flu for non-drowsy relief from common cold symptoms.",
+		"rating": 4.6,
+		"stock": 90
+	},
+	{
+		"id": 8,
+		"name": "Theraflu Severe Cold & Cough",
+		"image": "/images/theraflu.jpg",
+		"price": "$9.99",
+		"category": "Cold & Flu",
+		"brand": "Theraflu",
+		"description": "Theraflu Severe Cold & Cough for powerful relief from cold and flu symptoms.",
+		"rating": 4.7,
+		"stock": 70
+	},
+	{
+		"id": 9,
+		"name": "Mucinex Chest Congestion",
+		"image": "/images/mucinex.jpg",
+		"price": "$13.99",
+		"category": "Cold & Flu",
+		"brand": "Mucinex",
+		"description": "Mucinex Chest Congestion for breaking up mucus and relieving chest congestion.",
+		"rating": 4.9,
+		"stock": 85
+	},
+	{
+		"id": 10,
+		"name": "Claritin 24-Hour Allergy Relief",
+		"image": "/images/claritin.jpg",
+		"price": "$18.99",
+		"category": "Allergy Relief",
+		"brand": "Claritin",
+		"description": "Claritin 24-Hour Allergy Relief for non-drowsy relief from allergy symptoms.",
+		"rating": 4.7,
+		"stock": 60
+	},
+	{
+		"id": 11,
+		"name": "Zyrtec Allergy Relief",
+		"image": "/images/zyrtec.jpg",
+		"price": "$16.99",
+		"category": "Allergy Relief",
+		"brand": "Zyrtec",
+		"description": "Zyrtec Allergy Relief for fast, all-day relief from indoor and outdoor allergies.",
+		"rating": 4.8,
+		"stock": 100
+	},
+	{
+		"id": 12,
+		"name": "Flonase Nasal Spray",
+		"image": "/images/flonase.jpg",
+		"price": "$22.99",
+		"category": "Allergy Relief",
+		"brand": "Flonase",
+		"description": "Flonase Nasal Spray for multi-symptom allergy relief including congestion and itchy eyes.",
+		"rating": 4.9,
+		"stock": 75
+	},
+	{
+		"id": 13,
+		"name": "Tums Antacid Chewable Tablets",
+		"image": "/images/tums.jpg",
+		"price": "$7.99",
+		"category": "Digestive Health",
+		"brand": "Tums",
+		"description": "Tums Antacid Chewable Tablets for fast relief from heartburn and acid indigestion.",
+		"rating": 4.7,
+		"stock": 130
+	},
+	{
+		"id": 14,
+		"name": "Pepto-Bismol Liquid",
+		"image": "/images/pepto-bismol.jpg",
+		"price": "$6.49",
+		"category": "Digestive Health",
+		"brand": "Pepto-Bismol",
+		"description": "Pepto-Bismol Liquid for relief from upset stomach, nausea, and diarrhea.",
+		"rating": 4.8,
+		"stock": 95
+	},
+	{
+		"id": 15,
+		"name": "Imodium Anti-Diarrheal",
+		"image": "/images/imodium.jpg",
+		"price": "$8.49",
+		"category": "Digestive Health",
+		"brand": "Imodium",
+		"description": "Imodium Anti-Diarrheal for fast relief from diarrhea and discomfort.",
+		"rating": 4.6,
+		"stock": 100
+	},
+	{
+		"id": 16,
+		"name": "CeraVe Moisturizing Cream",
+		"image": "/images/cerave.jpg",
+		"price": "$14.99",
+		"category": "Skincare",
+		"brand": "CeraVe",
+		"description": "CeraVe Moisturizing Cream for hydrating and restoring the protective skin barrier.",
+		"rating": 4.9,
+		"stock": 110
+	},
+	{
+		"id": 17,
+		"name": "Neutrogena Hydro Boost Water Gel",
+		"image": "/images/neutrogena.jpg",
+		"price": "$18.49",
+		"category": "Skincare",
+		"brand": "Neutrogena",
+		"description": "Neutrogena Hydro Boost Water Gel for long-lasting hydration and smooth skin.",
+		"rating": 4.8,
+		"stock": 95
+	},
+	{
+		"id": 18,
+		"name": "Aveeno Daily Moisturizing Lotion",
+		"image": "/images/aveeno.jpg",
+		"price": "$9.99",
+		"category": "Skincare",
+		"brand": "Aveeno",
+		"description": "Aveeno Daily Moisturizing Lotion for smooth, hydrated, and healthy skin.",
+		"rating": 4.8,
+		"stock": 120
+	},
+	{
+		"id": 19,
+		"name": "Aleve Pain Reliever",
+		"image": "/images/aleve.jpg",
+		"price": "$8.99",
+		"category": "Pain Relief",
+		"brand": "Aleve",
+		"description": "Aleve Pain Reliever for long-lasting relief from headaches, backaches, and joint pain.",
+		"rating": 4.7,
+		"stock": 90
+	},
+	{
+		"id": 20,
+		"name": "Nature’s Bounty Fish Oil",
+		"image": "/images/fish-oil.jpg",
+		"price": "$11.99",
+		"category": "Supplements",
+		"brand": "Nature’s Bounty",
+		"description": "Nature’s Bounty Fish Oil for heart health and maintaining good cholesterol levels.",
+		"rating": 4.6,
+		"stock": 140
+	}
+]
