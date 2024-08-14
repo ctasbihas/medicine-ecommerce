@@ -3,6 +3,7 @@
 import { filterMedicines } from "@/utils/FilterMedicines";
 import React from "react";
 import ProductCard from "./ProductCard";
+import { Image } from "@nextui-org/react";
 
 interface Product {
 	id: number;
@@ -48,6 +49,18 @@ const ProductsList: React.FC<ProductsListProps> = ({
 						/>
 					))}
 				</div>
+				{filterMedicines(medicines, query).length === 0 && (
+					<div className="flex flex-col items-center justify-center py-20">
+						<h2 className="text-2xl font-semibold mb-4">
+							No Products Found
+						</h2>
+						<p className="text-gray-600 text-center w-1/2">
+							We could not find any products matching your search.
+							Try adjusting your filters or search for something
+							else.
+						</p>
+					</div>
+				)}
 			</div>
 		</div>
 	);
