@@ -3,7 +3,6 @@
 import { filterMedicines } from "@/utils/FilterMedicines";
 import React from "react";
 import ProductCard from "./ProductCard";
-import { Image } from "@nextui-org/react";
 
 interface Product {
 	id: number;
@@ -30,7 +29,7 @@ const ProductsList: React.FC<ProductsListProps> = ({
 	const query = { name: searchTerm, category };
 
 	React.useEffect(() => {
-		fetch("/data/medicines.json")
+		fetch("/api/products")
 			.then((res) => res.json())
 			.then(setMedicines);
 	}, []);

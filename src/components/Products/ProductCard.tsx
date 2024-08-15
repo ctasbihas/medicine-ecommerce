@@ -1,4 +1,5 @@
 import { Button, Image } from "@nextui-org/react";
+import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa";
 
 interface Product {
@@ -28,9 +29,12 @@ const ProductCard = ({ product }: { product: Product }) => {
 				className="w-full h-40 object-contain"
 			/>
 			<div className="p-4">
-				<h3 className="text-xl font-semibold mb-2 line-clamp-1">
+				<Link
+					href={`/products/${product.id}`}
+					className="text-xl font-semibold mb-2 line-clamp-1"
+				>
 					{product.name}
-				</h3>
+				</Link>
 				<p className="text-lg text-gray-800 mb-4">${product.price}</p>
 				<p className="text-base text-gray-800">
 					For {product.category}

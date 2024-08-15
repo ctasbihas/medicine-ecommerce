@@ -19,6 +19,7 @@ const Products = () => {
 				searchTerm={searchTerm}
 				category={category}
 			/>
+			{/* <Pagination /> */}
 		</main>
 	);
 };
