@@ -1,4 +1,3 @@
-import Swiper from "@/components/Products/Swiper";
 import { Button, Image } from "@nextui-org/react";
 import { FaShoppingCart } from "react-icons/fa";
 
